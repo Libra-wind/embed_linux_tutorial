@@ -208,7 +208,7 @@ dfire创建的；在开发主机上仅embedfire能读写的文件，在开发板
 
 #以下命令在主机上运行
 
-mkdir /home/embedfire/workdir
+mkdir ~/workdir
 
 更新exports配置
 '''''''''''
