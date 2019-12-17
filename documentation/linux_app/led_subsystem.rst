@@ -257,7 +257,7 @@ echo heartbeat > /sys/class/leds/cpu/trigger
 
 23 r_fd = fopen(RLED_DEV_PATH, "w");
 
-24 if (r_fd < 0) {
+24 if (r_fd == NULL) {
 
 25 printf("Fail to Open %s device\n", RLED_DEV_PATH);
 
@@ -271,7 +271,7 @@ echo heartbeat > /sys/class/leds/cpu/trigger
 
 30 g_fd = fopen(GLED_DEV_PATH, "w");
 
-31 if (g_fd < 0) {
+31 if (g_fd == NULL) {
 
 32 printf("Fail to Open %s device\n", GLED_DEV_PATH);
 
@@ -285,7 +285,7 @@ echo heartbeat > /sys/class/leds/cpu/trigger
 
 37 b_fd = fopen(BLED_DEV_PATH, "w");
 
-38 if (b_fd < 0) {
+38 if (b_fd == NULL) {
 
 39 printf("Fail to Open %s device\n", BLED_DEV_PATH);
 
